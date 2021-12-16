@@ -1,0 +1,101 @@
+/* reset css */
+html{
+    font-size: 70%;
+    scroll-behavior: smooth;
+    background-color: var(--connectionButtonTextColor);
+}
+body{
+    font: 1.6rem 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* ok */
+body{
+    background: #fafafa;
+}
+.wrapper .header{
+    max-width: 370px;
+    margin: auto;
+}
+.wrapper .header .top{
+    background: #fff;
+    border: 0.2rem solid #e6e6e6;
+    padding: 4rem 4rem 2rem;
+
+}
+.wrapper .header .logo img{
+   display: block; 
+   margin: 0 auto 3.5rem;
+}
+.wrapper .header .form .input_field{
+    margin-bottom: 0.5rem;
+}
+.wrapper .header .form .input_field .input{
+    width: 100%;
+    background: #fafafa;
+    border: 0.1rem solid #efefef;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.wrapper .header .form .btn{
+    margin: 1rem 0;
+    background: #3897f0;
+    text-align: center;
+    padding: 0.5rem;
+}
+.wrapper .header .form .btn a{
+    color: #fff;
+    display: block;
+}
+.wrapper .header .or{
+    display: flex;
+    height: 1.5rem;
+    margin: 1.5rem 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .header .or .line{
+    width: 10.5rem;
+    height: 0.2rem;
+    background: #efefef;
+}
+.wrapper .header .or p{
+    color:  grey;
+    font-size: 1.2rem;
+}
+.wrapper .heade .diff .fb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fb{
+    margin-left: 4rem;
+    max-width: 1.3rem;
+    margin-top: -0.2rem;
+}
+#fb2{
+    position: absolute;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-top: -0.2rem;
+}
+#fb3{
+    
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
