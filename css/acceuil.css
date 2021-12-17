@@ -1,0 +1,122 @@
+/* reset css */
+html{
+    font-size: 70%;
+    scroll-behavior: smooth;
+    background-color: var(--connectionButtonTextColor);
+}
+body{
+    font: 1.6rem 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* ok */
+body{
+    background-color: #fafafa;
+}
+.top{
+    width: 370px;
+    background: #fff;
+    border: 0.2rem solid #e6e6e6;
+    padding: 2rem 2rem 2rem;
+    margin: 2rem auto;
+}
+.top P{
+    text-align: center;
+    color: green;
+}
+#img{
+    max-width: 18rem;
+   display: block; 
+   margin: 0 auto 2rem;
+}
+.top2{
+    width: 370px;
+    background: #fff;
+    border: 0.2rem solid #e6e6e6;
+    padding: 2rem 2rem 2rem;
+    margin: 2rem auto;
+}
+.top2 p{
+    text-align: center;
+    color: grey;
+}
+.yes{
+    background-color: black;
+    color: grey;
+    margin: auto;
+    width: 90.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.yes p{
+    padding-left: 0.5rem;
+}
+.black{
+    width: 90.8rem;
+    background-color: black;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin: auto;
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.photo img{
+    margin: auto;
+    width: 30rem;
+    padding-bottom: .2rem;
+}
+.apps{
+    max-width: 370px;
+    margin: 1rem auto 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.icons img{
+    max-width: 13rem;
+    max-height: 4rem;
+    margin-top: 1.8rem;
+}
+@media screen and (max-width: 70rem) {
+
+    .photo{
+        width: 100vw;
+    }
+    .photo img{
+        width: 33vw;
+        margin-top: -0.1rem;
+    }
+    .black{
+        margin: auto;
+        width: 101vw;
+    }
+    .yes{
+        width: 101vw;
+    }
+    .top{
+        width: 101vw;
+    }
+    .top2{
+        width: 101vw;
+
+    }
+}

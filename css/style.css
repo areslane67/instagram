@@ -26,71 +26,75 @@ a{
 body{
     background: #fafafa;
 }
-.wrapper .header{
+.center{
     max-width: 370px;
     margin: auto;
 }
-.wrapper .header .top{
+.top{
     background: #fff;
     border: 0.2rem solid #e6e6e6;
-    padding: 4rem 4rem 2rem;
-
+    padding: 2rem 2rem 2rem;
+    margin-top: 5rem;
 }
-.wrapper .header .logo img{
+#img{
+    max-width: 18rem;
    display: block; 
-   margin: 0 auto 3.5rem;
+   margin: 0 auto 2rem;
 }
-.wrapper .header .form .input_field{
+.input_field{
     margin-bottom: 0.5rem;
 }
-.wrapper .header .form .input_field .input{
+.input{
     width: 100%;
     background: #fafafa;
     border: 0.1rem solid #efefef;
     font-size: 1.2rem;
     padding: 1rem;
+    border-radius: 0.2rem;
 }
-.wrapper .header .form .btn{
+.btn{
     margin: 1rem 0;
     background: #3897f0;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
 }
-.wrapper .header .form .btn a{
+.btn a{
     color: #fff;
     display: block;
 }
-.wrapper .header .or{
+.ou{
     display: flex;
     height: 1.5rem;
     margin: 1.5rem 0 2rem;
     justify-content: space-between;
     align-items: center;
 }
-.wrapper .header .or .line{
+.line{
     width: 10.5rem;
     height: 0.2rem;
     background: #efefef;
 }
-.wrapper .header .or p{
+.o p{
     color:  grey;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
-.wrapper .heade .diff .fb{
+.fb{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #fb{
-    margin-left: 4rem;
+    margin-left: -10.6rem;
     max-width: 1.3rem;
     margin-top: -0.2rem;
 }
 #fb2{
     position: absolute;
-    font-weight: 500;
-    margin-left: 1rem;
-    margin-top: -0.2rem;
+    font-size: 1.4rem;
+    color: #4267B2;
+    
 }
 #fb3{
     
@@ -98,4 +102,28 @@ body{
     text-align: center;
     margin-top: 2rem;
     margin-left: 8rem;
+    color: #4267B2;
+}
+.signup{
+    max-width: 370px;
+    margin: 1rem auto 2rem;
+    background: #fff;
+    border: 0.2rem solid #e6e6e6;
+    padding: 2rem 2rem 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.signup a{
+    color: #3897f0;
+}
+.apps{
+    max-width: 370px;
+    margin: 1rem auto 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.icons img{
+    max-width: 13rem;
+    max-height: 4rem;
+    margin-top: 1.8rem;
 }

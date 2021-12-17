@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +9,55 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>instagram</title>
 </head>
-<body>
-    <section class="wrapper">
-        <section class="header">
 
-            <section class="top">
-                <section class="logo">
-                    <object type="image/svg+xml" data="./svg/logo_instagram.svg"></object>
+<body>
+    <section class="center">
+        <section class="top">
+            <section class="logo">
+                <object type="image/svg+xml" data="./svg/logo_instagram.svg" id="img"></object>
+            </section>
+            <section class="form">
+                <section class="input_field">
+                    <input type="text" placeholder="Mail d'utilisateur" class="input">
                 </section>
-                <section class="form">
-                    <section class="input_field">
-                        <input type="text" placeholder="phone number, username, or email" class="input">
-                    </section>
-                    <section class="input_field">
-                        <input type="password" placeholder="password" class="input">
-                    </section>
-                    <section class="btn">
-                        <a href="#">Log in</a>
-                    </section>
+                <section class="input_field">
+                    <input type="password" placeholder="Mot de passe" class="input">
                 </section>
-                <section class="or">
-                    <section class="line"></section>
-                    <p>or</p>
-                    <section class="line"></section>
+                <section class="btn">
+                    <a href="#">Se connecter</a>
                 </section>
-                <section class="diff">
-                    <section class="fb">
-                        <a href=""><img src="./asset/Facebook_icon-icons.com_66805.png" alt="Facebook" id="fb"></a>
-                        <a href="" id="fb2"><p>log in with Facebook</p></a>
-                    </section>
-                    <section class="forgot"></section>
-                    <a href="#" id="fb3">Forgot password ?</a>
+            </section>
+            <section class="ou">
+                <section class="line"></section>
+                <p>OU</p>
+                <section class="line"></section>
+            </section>
+            <section class="diff">
+                <section class="fb">
+                    <a href=""><img src="./asset/Facebook_icon-icons.com_66805.png" alt="Facebook" id="fb"></a>
+                    <a href="" id="fb2">
+                        <p>Se connecter avec Facebook</p>
+                    </a>
                 </section>
+                <section class="forgot"></section>
+                <a href="https://www.instagram.com/accounts/password/reset/" id="fb3">Mot de passe oublie ?</a>
             </section>
         </section>
     </section>
+    <section class="signup">
+        <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-Vous</a></p>
+    </section>
 
-    
+    <section class="apps">
+        <p>Télécharger l'application</p>
+        <section class="icons">
+            <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"><img src="./asset/appleStore.png"
+                    alt="appleStore"></a>
+            <a
+                href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=69FF29CA-ADA9-443F-8679-880CCBB8FE3A&utm_content=lo&utm_medium=badge"><img
+                    src="./asset/googlePlay.png" alt="googlePlay"></a>
+        </section>
+    </section>
 </body>
+
 </html>
