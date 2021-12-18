@@ -8,6 +8,7 @@ body{
     font: 1.6rem 'Arimo', sans-serif;
     margin: 0;
     padding: 0; 
+    font-family: 'Open-Sans', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     margin: 0;
@@ -41,7 +42,16 @@ body{
    display: block; 
    margin: 0 auto 2rem;
 }
+#error{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: crimson;
+}
 .input_field{
+    margin-bottom: 0.5rem;
+}
+#mail{
     margin-bottom: 0.5rem;
 }
 .input{
@@ -52,17 +62,17 @@ body{
     padding: 1rem;
     border-radius: 0.2rem;
 }
-.btn{
+#login_btn{
     margin: 1rem 0;
     background: #3897f0;
     text-align: center;
     padding: 0.7rem;
+    width: 100%;
+    border: transparent;
     border-radius: 0.2rem;
     font-size: 1.4rem;
-}
-.btn a{
-    color: #fff;
-    display: block;
+    color: white;
+    cursor: pointer;
 }
 .ou{
     display: flex;
@@ -72,13 +82,13 @@ body{
     align-items: center;
 }
 .line{
-    width: 10.5rem;
+    width: 12.2rem;
     height: 0.2rem;
     background: #efefef;
 }
-.o p{
+.ou p{
     color:  grey;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 .fb{
     display: flex;

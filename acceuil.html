@@ -13,11 +13,11 @@
         <section class="img">
             <object type="image/svg+xml" data="./svg/logo_instagram.svg" id="img"></object>
         </section>
-        <p>..............................</p>
+        <p id="yesmail">Bonjour</p>
     </section>
     <section class="top2">
         <p>Votre compte est</p>
-        <p>...................</p>
+        <p id="yesmail2"></p>
     </section>
     <section class="yes">
         <img src="./asset/Instagram_icon-icons.com_66804.png" alt=""><p>Tendeces on instagram</p>
@@ -25,11 +25,11 @@
     <section class="black">
         <section class="photo">
             <img src="./asset/boy.jpg" alt="img">
-            <img src="./asset/girl_mountain.jpg" alt="">
-            <img src="./asset/girl_train.jpg" alt="">
-            <img src="./asset/natureboy.jpg" alt="">
-            <img src="./asset/man_bench.jpg" alt="">
-            <img src="./asset/closegirl.jpg" alt="">
+            <img src="./asset/girl_mountain.jpg" alt="img">
+            <img src="./asset/girl_train.jpg" alt="img">
+            <img src="./asset/natureboy.jpg" alt="img">
+            <img src="./asset/man_bench.jpg" alt="img">
+            <img src="./asset/closegirl.jpg" alt="img">
         </section>
     </section>
     <section class="apps">
@@ -44,4 +44,9 @@
     </section>
     
 </body>
+<script>
+    let submit_log = localStorage.getItem("name");
+    yesmail.innerText += ` ${submit_log}`;
+    yesmail2.innerText += ` ${submit_log}`;
+</script>
 </html>

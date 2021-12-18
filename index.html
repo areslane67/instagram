@@ -17,14 +17,11 @@
                 <object type="image/svg+xml" data="./svg/logo_instagram.svg" id="img"></object>
             </section>
             <section class="form">
+                <p id="error"></p>
                 <section class="input_field">
-                    <input type="text" placeholder="Mail d'utilisateur" class="input">
-                </section>
-                <section class="input_field">
-                    <input type="password" placeholder="Mot de passe" class="input">
-                </section>
-                <section class="btn">
-                    <a href="#">Se connecter</a>
+                    <input type="text" placeholder="Mail d'utilisateur" class="input" id="mail">
+                    <input type="password" placeholder="Mot de passe" class="input" id="mdp">
+                    <a href="#" id="lien"><input id="login_btn" type="submit" value="Se connecter" onClick="check()"/></a> 
                 </section>
             </section>
             <section class="ou">
@@ -34,8 +31,8 @@
             </section>
             <section class="diff">
                 <section class="fb">
-                    <a href=""><img src="./asset/Facebook_icon-icons.com_66805.png" alt="Facebook" id="fb"></a>
-                    <a href="" id="fb2">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252215ntzgb7zpt9810ls0mr1xfvlbd7n2fj61i9birvbnx01m16zvedc%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dfr_FR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9ea3e7ba-2fac-45f0-a6ae-15f93426eb91%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252215ntzgb7zpt9810ls0mr1xfvlbd7n2fj61i9birvbnx01m16zvedc%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=fr_FR&pl_dbl=0"><img src="./asset/Facebook_icon-icons.com_66805.png" alt="Facebook" id="fb"></a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252215ntzgb7zpt9810ls0mr1xfvlbd7n2fj61i9birvbnx01m16zvedc%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dfr_FR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9ea3e7ba-2fac-45f0-a6ae-15f93426eb91%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252215ntzgb7zpt9810ls0mr1xfvlbd7n2fj61i9birvbnx01m16zvedc%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=fr_FR&pl_dbl=0" id="fb2">
                         <p>Se connecter avec Facebook</p>
                     </a>
                 </section>
@@ -45,7 +42,7 @@
         </section>
     </section>
     <section class="signup">
-        <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-Vous</a></p>
+        <p>Vous n'avez pas de compte ? <a href="https://www.instagram.com/accounts/emailsignup/?hl=fr">Inscrivez-Vous</a></p>
     </section>
 
     <section class="apps">
@@ -59,5 +56,36 @@
         </section>
     </section>
 </body>
+
+<script>
+    
+
+var name = document.getElementById('mail');
+var pw = document.getElementById('mdp');
+
+
+localStorage.setItem('name', 'areslane67@gmail.com');
+localStorage.setItem('pw', 'sa merite un 20');
+
+
+
+function check() {
+
+    var storedName = localStorage.getItem('name');
+    var storedPw = localStorage.getItem('pw');
+
+    var mail = document.getElementById('mail');
+    var mdp = document.getElementById('mdp');
+
+   
+    if(mail.value !== storedName && mdp.value !== storedPw) {
+        error.textContent = 'Mail ou mot de passe incorrecte';
+    }else if(mail.value == storedName && mdp.value !== storedPw){
+        error.textContent = 'Mot de passe incorrecte';
+    }else{
+        lien.href ="acceuil.html";
+    }
+}
+</script>
 
 </html>
