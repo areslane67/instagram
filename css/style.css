@@ -1,6 +1,6 @@
 /* reset css */
 html{
-    font-size: 70%;
+    font-size: 70%; 
     scroll-behavior: smooth;
     background-color: var(--connectionButtonTextColor);
 }
