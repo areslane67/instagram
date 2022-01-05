@@ -3,7 +3,7 @@ var pw = document.getElementById('mdp');
 
 
 localStorage.setItem('name', 'areslane67@gmail.com');
-localStorage.setItem('pw', 'sa merite un 20');
+localStorage.setItem('pw', 'password');
 
 
 
@@ -17,10 +17,11 @@ function check() {
 
    
     if(mail.value !== storedName && mdp.value !== storedPw) {
+
         error.textContent = 'Mail ou mot de passe incorrecte';
     }else if(mail.value == storedName && mdp.value !== storedPw){
         error.textContent = 'Mot de passe incorrecte';
     }else{
-        lien.href ="acceuil.html";
+        window.location.assign("acceuil.html")
     }
 }
