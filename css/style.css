@@ -24,6 +24,19 @@ a{
 }
 
 /* ok */
+header{
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: grey;
+}
+header h1 .insta{
+    color: black;
+}
 body{
     background: #fafafa;
 }
